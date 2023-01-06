@@ -1,0 +1,5 @@
+for i in range(int(input())):
+    a=list(map(int,input().split()))
+    m=max(a)
+    mi=min(a)
+    print(m-mi)
