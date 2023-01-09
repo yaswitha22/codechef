@@ -1,0 +1,10 @@
+for i in range(int(input())):
+    n=int(input())
+    fc=int(0.1*n)
+    sc=100
+    if fc>sc:
+        print(fc)
+    elif sc>fc:
+        print(sc)
+    else:
+        print(fc)
