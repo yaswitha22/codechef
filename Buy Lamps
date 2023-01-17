@@ -1,0 +1,14 @@
+t = int(input())
+
+for _ in range(t):
+    n, k, x, y = list(map(int, input().split()))
+    
+    min_cost = k*x
+    remaining_lamps = n - k
+    
+    if remaining_lamps <= 0:
+        print(min_cost)
+    elif y <= x:
+        print(min_cost + remaining_lamps*y)
+    else:
+        print(min_cost + remaining_lamps*x)
