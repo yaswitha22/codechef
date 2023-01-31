@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    x,y,X,Y=map(int,input().split())
+    print((X//x)+(Y//y))
+   
