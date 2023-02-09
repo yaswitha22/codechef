@@ -1,0 +1,13 @@
+def check(d,l,r):
+    if d >= l and d <=r :
+        return 'Take second dose now'
+    elif d > l  and  d > r :
+        return 'Too Late'
+    else:
+        return 'Too Early'
+
+
+t=int(input())
+for _ in range(t):
+    d,l,r=map(int,input().split())
+    print(check(d,l,r))
